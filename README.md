@@ -4,4 +4,4 @@ This is the public repository for the Axle CLI agent, which is currently closed 
 Use this repo to share bug reports, feature requests, and other tester feedback.
 
 Install the CLI:
-`npm i -g @vm2/axle`
+`npm i -g @vm2/axle@alpha`
