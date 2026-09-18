@@ -12,7 +12,20 @@ npm install -g @vm2/axle
 
 Then run `axle` in any project directory.
 
-Axle is an invite-gated alpha. Email
+Here are some access codes:
+
+- 2V5J-Q86Q-KFVP
+- WBPW-XYTX-F2K2
+- 9D8N-YBTC-V8VW
+- 8VGV-V2YJ-VUX5
+- XK29-AZNQ-ZEAJ
+- D4XX-E43X-N6US
+- 57JY-6MNU-EHBK
+- 56UR-9QRQ-ZE5D
+- CVCD-EKDU-ZDE6
+- ZY73-Z8UC-QUKV
+
+Axle is an invite-gated alpha. If the above codes do not work, email
 [contact@vihangamihiranga.com](mailto:contact@vihangamihiranga.com) for an
 invite code, then run `/login` on first start to redeem it.
 
