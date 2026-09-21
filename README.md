@@ -8,7 +8,7 @@ My take on a terminal coding agent.
 
 Here is Axle fixing some errors on a simple c++ codebase for a 2d platform game. Recording is sped up 2x.
 
-![Axle Demo](assets/axle-demo.mp4)
+<video src="assets/axle-demo.mp4" controls muted playsinline></video>
 
 ## Install
 
@@ -94,7 +94,7 @@ If you wish to set up permissions, write a `permissions.json` in any of the `.ax
 
 Here, `path` applies to every file a tool touches, `bash` to each command in a chain,
 `external_directory` to anything outside the project root, and the rest to one
-tool each. 
+tool each.
 
 `*` matches anything, and `~` means your home directory. For each surface, the
 last matching rule takes priority, so put general rules first. Each surface is
