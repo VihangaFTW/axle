@@ -4,6 +4,12 @@ My take on a terminal coding agent.
 
 ![Axle](assets/cli.png)
 
+## Demo
+
+Here is Axle fixing some errors on a simple c++ codebase for a 2d platform game. Recording is sped up 2x.
+
+![Axle Demo](assets/axle-demo.mp4)
+
 ## Install
 
 ```bash
@@ -25,29 +31,28 @@ Here are some access codes:
 - CVCD-EKDU-ZDE6
 - ZY73-Z8UC-QUKV
 
-Axle is an invite-gated alpha. If the above codes do not work, email
+Axle is currently in alpha. If the above codes do not work, email
 [contact@vihangamihiranga.com](mailto:contact@vihangamihiranga.com) for an
 invite code, then run `/login` on first start to redeem it.
 
-## What is in it
+## Highlights
 
-- A curated list of models with their OpenRouter equivalents.
-- Local file and shell tools with web search and fetch
-- Sessions you can resume, plus `/undo` and `/redo` over the edits a turn made
-- Support for custom subagents and skills loaded from your own `.axle`, `.agents`, or `.claude`
+- A curated list of models I vouch for with their OpenRouter equivalents.
+- Includes the basic tools for editing files, a shell tool and a tool for web search+fetch.
+- Sessions you can resume, plus `/undo` and `/redo` over edits made by a turn.
+- Support for custom subagents and skills loaded from `.axle`, `.agents`, or `.claude`
   directories
-- Image attachments, themes, and a configurable reasoning effort
+- QOL features such as image and file attachments, themes, subagent and diff panel.
 
 Run `/` in the TUI for the full command list.
 
 ## Permissions
 
-Out of the box Axle has no permissions set: every local tool runs freely inside
-the project, and anything reaching outside it asks first.
+Out of the box Axle has no permissions set. However, it will ask for permission
+if it goes outside the current project directory.
 
-To narrow that, write a `permissions.json` in any of the `.axle`, `.agents` or
-`.claude` directories. Global files are read first and project
-files last, so a project rule wins.
+If you wish to set up permissions, write a `permissions.json` in any of the `.axle`, `.agents` or
+`.claude` directories. Project permissions will have higher priority over global permissions.
 
 ```json
 {
@@ -87,12 +92,14 @@ files last, so a project rule wins.
 }
 ```
 
-`path` applies to every file a tool touches, `bash` to each command in a chain,
+Here, `path` applies to every file a tool touches, `bash` to each command in a chain,
 `external_directory` to anything outside the project root, and the rest to one
-tool each. `*` is greedy, `~` expands, and within a surface the last matching
-rule wins, so put catch-alls first. Surfaces are judged independently and the
-strictest answer stands.
+tool each. 
+
+`*` matches anything, and `~` means your home directory. For each surface, the
+last matching rule takes priority, so put general rules first. Each surface is
+checked separately, and the strictest result is used.
 
 ## Note
 
-Alpha. Expect things to move and break. Please report bugs or feature requests via `/issue`.
+Alpha. Expect features and UI elements to move and break. Please report bugs or feature requests via `/issue`.
