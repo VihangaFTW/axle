@@ -7,7 +7,8 @@ My take on a terminal coding agent.
 ## Demo
 
 Here is Axle fixing some errors on a simple c++ codebase for a 2d platform game. Recording is sped up 3x.
-<video src="assets/axle-demo.mp4" controls muted playsinline></video>
+
+https://github.com/user-attachments/assets/e09ebb59-b14f-4dbc-92fb-6512714ef422
 
 ## Install
 
